@@ -15,18 +15,19 @@ body {
 }
 
 main {
-  margin: .25rem;
+  margin: .75rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
+  grid-gap: .75rem;
 }
 
 main > div {
   border: 3px solid #987ffa;
   border-radius: 6px;
-  padding: .5em 1.5em .7em;
+  padding: .7em 1em;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -36,8 +37,8 @@ div > img {
 
 div > h2 {
   font-family: Oswald, sans-serif;
-  font-size: 2rem;
-  margin-bottom: 0;
+  font-size: 1.4rem;
+  margin: 1rem 0 0;
   color: #6f00e7;
   text-align: center;
 }
@@ -51,15 +52,19 @@ div > ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: Oswald;
   display: flex;
-  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 ul li:first-child {
   background-color: #6f00e7;
   color: #fff;
-  padding:.5em 1.5em .7em;
+  padding: .5em 1em .5em 1.5em;
   border: none;
   border-radius: 3em;
+  font-family: Oswald;
+  font-size: .75rem;
+  font-weight: bold;
 }
